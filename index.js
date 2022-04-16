@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-port = 5000;
+port = process.env.PORT || 5000;
 const transacation = require("./routes/transaction")
 const connectDB = require('./config/db');
 
